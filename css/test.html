@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2">
+    <title>Multicol starting point</title>
+    <style>
+        @media not all and (min-width: 800px) , (max-width: 200px){
+          .container {
+            filter: grayscale(1);
+          }
+        }
+        @media (hover: hover) {
+            body {
+                color: rebeccapurple;
+            }
+        }
+        @media screen and (min-width: 450px) and (max-width: 500px) {
+          .container {
+            filter:blur(1px)
+          }
+        }
+        @media screen and (min-width: 500px)and (max-width: 600px) {
+          .container {
+            filter:blur(0.5px)
+          }
+        }
+        @media screen and (min-width: 400px) and (max-width: 450px) {
+          .container {
+            filter:blur(1px)
+          }
+        }
+        @media screen and (min-width: 350px) and (max-width: 400px) {
+          .container {
+            filter:blur(1px)
+          }
+        }
+        body {
+            width: 90%;
+            max-width: 900px;
+            margin: 2em auto;
+            font: .9em/1.2 Arial, Helvetica, sans-serif;
+        }
+        h1 {
+          color: unset;
+        }
+        .container {
+          background: lightblue;
+          /* color: saddlebrown; */
+          column-width: 100px;
+          column-gap: 100px;
+          column-rule: 4px dotted rgb(79, 185, 227);
+        }
+        .card {
+          break-inside: avoid;
+          page-break-inside: avoid;
+          /* word-break:break-all */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Simple multicol example</h1>
+        <a href="#">hehehe </a>
+        <p class="card"> Loremaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat vulputate.
+            Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at ultricies tellus
+            laoreet sit amet. Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci vel, viverra
+            egestas ligula. Curabitur vehicula tellus neque, ac ornare ex malesuada et. In vitae convallis lacus. Aliquam
+            erat volutpat. Suspendisse ac imperdiet turpis. Aenean finibus sollicitudin eros pharetra congue. Duis ornare
+            egestas augue ut luctus. Proin blandit quam nec lacus varius commodo et a urna. Ut id ornare felis, eget fermentum
+            sapien.</p>
+
+        <div>Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere
+            sit amet dapibus ut, facilisis sed est. Nam id risus quis ante semper consectetur eget aliquam lorem. Vivamus
+            tristique elit dolor, sed pretium metus suscipit vel. Mauris ultricies lectus sed lobortis finibus. Vivamus eu
+            urna eget velit cursus viverra quis vestibulum sem. Aliquam tincidunt eget purus in interdum. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
+    </div>
+</body>
+
+</html>
